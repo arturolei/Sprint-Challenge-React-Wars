@@ -1,0 +1,35 @@
+.sw-character-card {
+    background-color: white;
+    display:flex;
+    flex-flow:column;
+    align-items: center;
+    width: 70%;
+    padding: 3% 1%;
+    margin: 4% 3%;
+    border-radius: 30px;
+    border: 5px dashed lightblue;
+   
+}
+
+
+.sw-character-card h2{
+    margin: 1%;
+}
+
+.sw-character-card ul{
+    padding-inline-start: 0%;
+    width: 70%;
+}
+
+.sw-character-card li{
+    margin: 3%;
+    width: 100%;
+    text-align: left;
+}
+
+.sw-list-body{
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+    width: 70%;
+}

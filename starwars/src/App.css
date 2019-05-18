@@ -1,5 +1,13 @@
 .App {
   text-align: center;
+  width: 80%;
+  display:flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin: 2% auto;
+  border: 3px dashed yellow;
+  border-radius:20px;
+  font-size: 1.6rem;
 }
 .Header {
   color: #443e3e;
