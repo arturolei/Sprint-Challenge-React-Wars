@@ -1,24 +1,28 @@
 .sw-character-card {
-    background-color: white;
+    background-color: beige;
     display:flex;
     flex-flow:column;
     align-items: center;
-    width: 70%;
+    width: 61%;
     padding: 3% 1%;
     margin: 4% 3%;
     border-radius: 30px;
-    border: 5px dashed lightblue;
+    border: 8px dashed rgb(4, 178, 236);
    
 }
 
 
 .sw-character-card h2{
     margin: 1%;
+    font-size:3.0rem;
+    color: darkred;
 }
 
 .sw-character-card ul{
     padding-inline-start: 0%;
     width: 70%;
+    margin-top:1%;
+    margin-bottom:2%;
 }
 
 .sw-character-card li{
@@ -29,7 +33,7 @@
 
 .sw-list-body{
     display: flex;
-    flex-flow: column;
+    flex-flow: column wrap;
     align-items:center;
     width: 70%;
 }
