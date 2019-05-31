@@ -1,0 +1,39 @@
+.sw-character-card {
+    background-color: beige;
+    display:flex;
+    flex-flow:column;
+    align-items: center;
+    width: 61%;
+    padding: 3% 1%;
+    margin: 4% 3%;
+    border-radius: 30px;
+    border: 8px dashed rgb(4, 178, 236);
+   
+}
+
+
+.sw-character-card h2{
+    margin: 1%;
+    font-size:3.0rem;
+    color: darkred;
+}
+
+.sw-character-card ul{
+    padding-inline-start: 0%;
+    width: 70%;
+    margin-top:1%;
+    margin-bottom:2%;
+}
+
+.sw-character-card li{
+    margin: 3%;
+    width: 100%;
+    text-align: left;
+}
+
+.sw-list-body{
+    display: flex;
+    flex-flow: column wrap;
+    align-items:center;
+    width: 70%;
+}

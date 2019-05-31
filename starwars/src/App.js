@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import SWCharList from './components/SWCharList';
 import './App.css';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      page:1
     };
   }
 
@@ -29,10 +31,31 @@ class App extends Component {
       });
   };
 
+  getCharactersNext = () =>{
+    this.setState({page:this.state.page+1})
+    this.getCharacters('https://swapi.co/api/people/?page='+this.state.page);
+
+  }
+
+  getCharactersPrevious = () =>{
+    if(this.state.page <= 0){
+      this.setState({page:1})
+      this.getCharacters('https://swapi.co/api/people/?page='+this.state.page);
+    } else{
+      this.setState({page:this.state.page-1})
+      this.getCharacters('https://swapi.co/api/people/?page='+this.state.page);
+    }  
+    
+  }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <SWCharList swCharData ={this.state.starwarsChars} />
+        <button onClick={this.getCharactersNext}>Next</button>
+        {this.state.page === 1 ? null: <button onClick={this.getCharactersPrevious}>Previous</button>}
+        
       </div>
     );
   }
